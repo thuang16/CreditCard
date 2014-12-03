@@ -14,7 +14,7 @@ public class CreditCard
           return 3;
     else if (first4.equals("6011"))   //else if first 4 num is 6011, return 4
           return 4;
-    else if (first2.equals("36") || first2.equals("38") || (Integer.parseInt(first3) <= 305 && Integer.parseInt(first3) >= 300))  //else if first 2 number is 36/38 or first 3 num is 300-305, return 5
+    else if (first2.equals("36") || first2.equals("38") || Integer.parseInt(first3) <= 305 || Integer.parseInt(first3) >= 300)  //else if first 2 number is 36/38 or first 3 num is 300-305, return 5
           return 5;
     else 
      return 0;
